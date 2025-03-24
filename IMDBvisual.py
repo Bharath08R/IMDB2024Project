@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+
 # Set page title and layout
 st.set_page_config(page_title="Movie Data Analysis", layout="wide")
 st.title("Movie Data Analysis and Visualization")
@@ -127,7 +128,7 @@ heatmap_data = filtered_df.pivot_table(index="Genre", values="Rating", aggfunc="
 fig6 = px.imshow(heatmap_data, labels=dict(x="Genre", y="Rating", color="Average Rating"))
 st.plotly_chart(fig6)
 
-# 9. Correlation Analysis: Ratings vs. Voting Counts
+# # 9. Correlation Analysis: Ratings vs. Voting Counts
 st.write("### Correlation Analysis: Ratings vs. Voting Counts")
 fig7 = px.scatter(filtered_df, x="Rating", y="Votes", hover_data=["Title", "Genre"], trendline="ols", labels={"Rating": "Rating", "Votes": "Voting Counts"})
 st.plotly_chart(fig7)
