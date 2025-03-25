@@ -35,11 +35,11 @@ Data export capability for filtered results
 Dataset Structure 
 
 ## The dataset contain these columns:
-title: Movie name
-genre: Primary genre
-rating: IMDb rating (0-10)
-votes: Number of votes
-duration: Runtime in hours
+* title: Movie name
+* genre: Primary genre
+* rating: IMDb rating (0-10)
+* votes: Number of votes
+* duration: Runtime in minutes
 
 ## Usage Guide 
 Apply Filters using the sidebar controls
@@ -48,9 +48,9 @@ Explore visualizations below the data
 Download filtered data using the sidebar button
 
 ## Project Structure
-IMDBvisual.py            # Main Streamlit application
-movies.csv        # Dataset file
-imdbproject.ipynb  # Data scraping code
-README.md         # This file
+- IMDBvisual.py            # Main Streamlit application
+- movies.csv        # Dataset file
+- imdbproject.ipynb  # Data scraping code
+- README.md         # This file
 
 ## Contributions are welcome! Please open an issue or submit a pull request.
